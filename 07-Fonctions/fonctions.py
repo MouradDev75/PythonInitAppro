@@ -113,7 +113,7 @@ print("Produit =", p)
 print(">>>>>>>>>> Fonction avec un nombre variable de params en entrée:")
 
 def add(*entiers:int):
-    #print(type(entiers))
+    #print(type(entiers)) -> tuple
 
     s = 0
     for e in entiers:
@@ -128,6 +128,17 @@ print(add(10,15))
 print(add(10,15,20))
 print(add(10,15,30,40))
 print(add(10,15, 20,25,42))
+
+def my_function(*params, **kvargs):
+    print(params) # params anonymes -> stockés dans un tuple
+    print(kvargs) # params nommés -> stockés dans un dict
+
+my_function(15,2,3,4, nom="DUPONT", prenom="Jean")
+
+def generate_dict(**kvargs):
+    return kvargs
+
+print(generate_dict(a=1, b=2, c=3, d=4))
 
 print(">>>>>>>>>>>>>>> Variable locale - variable globale")
 

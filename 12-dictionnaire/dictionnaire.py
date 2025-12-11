@@ -86,17 +86,21 @@ for k,v in d.items():
 print(">>>>>>>>>>>>>>>>>> API rest")
 
 # web Service REST ou API Rest: est une application web qui renvoie du contenu JSON.
-# il s'agit d'un ensemble de ressources (images, article d'un journal....) o* chaque ressource un ID
+# il s'agit d'un ensemble de ressources (images, article d'un journal....) où chaque ressource un ID
 # (URI: Uniform Resource Identifier - end point), une méthode d'accès (GET-POST-PUT-DELETE) et elle 
 # publique ou privée.
 
-# Une API Rest n'est pas lmitée au format JSON: elle peut renvoyée du texte, du XmL, du binaire
+# Une API Rest n'est pas limitée au format JSON: elle peut renvoyée du texte, du XmL, du binaire
 
 # Toutes ces infos sont fournies dans la doc de l'api
 
 # Pour consommer une API Rest à partir d'un script python, il faut utiliser le module requests
 # pip install requests
 
+
+# lien api rest gratuite: https://restful-api.dev/
+
+# pip install requests
 import requests
 
 URI = 'https://api.restful-api.dev/objects'
@@ -114,3 +118,38 @@ for o in reponse:
 # ctr + shift + p: tapez jupyter -> choisir create Jupyter notebook
 # jupyter notebook utilise des cellules et dans une cellule on peut soit insérer du code Python ou
 # du markdown (langage de formattage de texte)
+
+print(">>>>>>> Dictionary comprehension")
+
+# Permet de créer de nouveaux dicts à partir de dicts existants en appliquant des modifications
+# aux dicts existants
+
+d = {
+    'a':1,
+    'b':2
+}
+
+# Nouveau dict en Inversant le dict d
+
+# Syntaxe classique:
+
+result = {}
+
+for k,v in d.items():
+    result[v] = k
+
+# Dictionary Comprehension: syntaxe simplifée
+
+new_result = {v:k for k,v in d.items()}
+
+d = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'd':4
+}
+
+# nouveau dict en doublant les valeurs
+
+new_dict = {k:v*2 for k,v in d.items()}
+print(new_dict)

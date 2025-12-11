@@ -111,7 +111,7 @@ print(nombres_doubles)
 
 # comprehension list: synatxe simplifiée
 
-numbers_doubles = [n * 2 for n in nombres]
+numbers_doubles = [e * 2 for e in nombres]
 print(numbers_doubles)
 
 nombres = range(10)

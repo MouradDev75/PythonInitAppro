@@ -20,7 +20,7 @@ print(texte.lstrip()) # élimine les espaces en début de chaine
 print('ceci' in texte)
 print(texte.replace('e', 'a'))
 print(texte.replace('e', 'a', count=1))
-print('Premeir caractère:',texte[1])
+print('Premier caractère:',texte[1])
 
 print(">>>>>>> split:")
 

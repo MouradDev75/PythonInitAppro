@@ -2,7 +2,7 @@
 
 # Bonne pratique:
 
-# Au début d'un projet pYthon, on crée un env. virtuel contenant les modules externes nécessaires au projet
+# Au début d'un projet Python, on crée un env. virtuel contenant les modules externes nécessaires au projet
 # 
 #  Pour créer des envi. virtuels, on utilise e module de base venv
 # Etape1: Commande à exécuter dans le terminal:
@@ -19,3 +19,12 @@
 # Dans vs Code (en bas à droit): choisir l'interpréteur de l'env. virtuel
 
 # Etape3: installez les modules externes nécessaires au projet
+
+#### A la fin du projet, on génère un fichier contenant la liste des modules externes nécessaires
+# au projet.
+
+# Commande à exécuter: pip freeze --local > requirements.txt
+
+# Pour installer les modules listés dans requirements.txt
+
+# commande: pip install -r requirements.txt

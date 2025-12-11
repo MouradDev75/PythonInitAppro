@@ -1,0 +1,27 @@
+#1)
+nombres = range(-10,10)
+nouvelle liste ne contenant que des nombres positifs
+
+#2)
+nombres = range(10)
+nouvelle liste en inversant uniquement les nombres impairs
+résultat attendu: [0,-1,2,-3,4,-5........]
+
+#3)
+lst = [1,5,2,3,7,9]
+Affichez le nombre d'éléments supérieurs à 3 dans lst
+
+#4)
+listA = [1,2,3,4]
+listB = [1,2]
+
+nouvelle liste qui est la différence entre listA et listB
+
+#5)
+Définir une fonction qui prend en entrée une liste d'entiers et qui renvoie la somme des entiers pairs
+distincts.
+
+lst = [2,3,2,4,6,4] -> somme attendue: 12
+
+def somme_pairs_distincts(entiers:list[int]) -> int:
+    pass

@@ -1,0 +1,31 @@
+1) Affichez tous les nombres de 1 (inclus) à 10 (inclus) -> utilisez la fonction range()
+2) Affichez tous les nombres pairs de 1 (inclus) à 15 (inclus) -> utilisez la fonction range()
+3) Affichez un menu:
+
+
+
+while True:
+
+   
+    choix = input("""
+
+    Choisir une opération:
+    - Addition: tapez a
+    - Soustraction: tapez s
+    - Multiplication: tapez m
+    - Division: tapez d
+    - Quitter: tapez q
+    
+    """)
+
+    if choix == 'q':
+        print('Fin du programme....')
+        break
+
+    - tant que le choix est différent de q, le menu s'affiche
+    - tant que le choix saisi n'est pas valide, redemandez la saisie d'un autre
+    - pour un choix valide: demandez la saisie de 2 nombres (float)
+    - affichez le résultat selon l'opération choisie
+    - le script doit gérer le cas d'une division par zéro
+
+être capable de détecter les contrôles et les traitements répététifs
